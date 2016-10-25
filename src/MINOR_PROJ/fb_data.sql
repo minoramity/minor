@@ -1,0 +1,1 @@
+create table student_fb (roll int, name varchar2(30))
