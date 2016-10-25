@@ -80,7 +80,7 @@ public class scanning extends javax.swing.JFrame {
              }
              for(n=n+1;n<=10;n++)
              {
-                 f[n]=0;
+                 uf[n]=0;
                  
              }
          }
