@@ -68,11 +68,11 @@ public class scanning extends javax.swing.JFrame {
          int n = sc.nextInt();
          int m= u+n;//n: number of friends
          boolean c,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
-         int f[]=new int[10];
-         //c:commitment f:friends
+         int uf[]=new int[10];
+         //c:commitment uf:friends of user
 
   
-     void canseepost(int f[n],int u)
+     void canseepost(int uf[n],int u)
          {
              if((f1&&f2)&&(!f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10)==true)
              {
@@ -88,7 +88,7 @@ public class scanning extends javax.swing.JFrame {
          int friend=2;
          int fof=3;
          int publicc=4;
-         int d;
+         int d=0;
          switch(d)
          {
              case 1:
