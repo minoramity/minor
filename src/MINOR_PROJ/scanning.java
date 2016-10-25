@@ -67,7 +67,7 @@ public class scanning extends javax.swing.JFrame {
          Scanner sc = new Scanner(System.in);
          int n = sc.nextInt();
          int m= u+n;//n: number of friends
-         boolean c,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
+         boolean uid,c,v,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,ff1,ff2,ff3,ff4,ff5,ff6,ff7,ff8,ff9,ff10;
          int uf[]=new int[10];
          //c:commitment uf:friends of user
 
@@ -91,28 +91,59 @@ public class scanning extends javax.swing.JFrame {
          int d=0;
          switch(d)
          {
-             case 1:
+             case 1: if((uid)&&!(f1&&f2&&f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10)==true)
+             {
+                 c=true;
+                 v=false;
+                 System.out.println("No privacy violations detected");
+             }
+             else
+             {
+                 v=true;
+                 System.out.println("Number of privacy violations detected are: ");
+                 
+             }
                  break;
-             case 2:
+             case 2: if(uid&&f1&&f2&&f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10==true)
+             {
+                 c=true;
+                 v=false;
+                 System.out.println("No privacy violations detected");
+              }
+              else
+             {
+                 v=true;
+                 System.out.println("Number of privacy violations detected are: ");
+                 
+             }
                  break;
-             case 3:
+             case 3: if(uid&&ff1&&ff2&ff3&&ff4&&ff5&&ff6&&ff7&&ff8&&ff9&&ff10==true)
+             {
+                 c=true;
+                 v=false;
+                 System.out.println("No privacy violations detected");
+             }
+              else
+             {
+                 v=true;
+                 System.out.println("Number of privacy violations detected are: ");
+                 
+             }
                  break;
-             case 4:
+             case 4: if(uid&&ff1&&ff2&ff3&&ff4&&ff5&&ff6&&ff7&&ff8&&ff9&&ff10==true)
+             {
+                 c=true;
+                 v=false;
+                 System.out.println("No privacy violations detected");
+             }
+              else
+             {
+                 v=true;
+                 System.out.println("Number of privacy violations detected are: ");
+                 
+             }
                  break;
          }
-         
-         
-         
-         
-         
-         
-         
-         
-         
-        
-        
-      
-        
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
