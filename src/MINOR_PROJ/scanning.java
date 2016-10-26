@@ -2,7 +2,9 @@
 package MINOR_PROJ;
 import java.util.Scanner;
 
+
 public class scanning extends javax.swing.JFrame {
+      static boolean uid,c,v,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,ff1,ff2,ff3,ff4,ff5,ff6,ff7,ff8,ff9,ff10;
 
     
     public scanning() {
@@ -59,22 +61,18 @@ public class scanning extends javax.swing.JFrame {
         s.show();
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    
-    public static void main(String args[]) {
-        int u=1;//u:num of user
+         
+          
+    public static void canspost(int uf[],int u)
+{
+            u=1;//u:num of user
         
          Scanner sc = new Scanner(System.in);
          int n = sc.nextInt();
          int m= u+n;//n: number of friends
-         boolean uid,c,v,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,ff1,ff2,ff3,ff4,ff5,ff6,ff7,ff8,ff9,ff10;
-         int uf[]=new int[10];
          //c:commitment uf:friends of user
 
-  
-     void canseepost(int uf[n],int u)
-         {
-             if((f1&&f2)&&(!f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10)==true)
+             if((f1&&f2==true)&&(f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10)==false)
              {
                  c=true;
              }
@@ -83,15 +81,15 @@ public class scanning extends javax.swing.JFrame {
                  uf[n]=0;
                  
              }
-         }
+         
          int onlyme=1;
          int friend=2;
          int fof=3;
          int publicc=4;
-         int d=0;
+         int d = 0;
          switch(d)
          {
-             case 1: if((uid)&&!(f1&&f2&&f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10)==true)
+             case 1: if((uid==true)&&(f1&&f2&&f3&&f4&&f5&&f6&&f7&&f8&&f9&&f10==false))
              {
                  c=true;
                  v=false;
@@ -144,6 +142,16 @@ public class scanning extends javax.swing.JFrame {
              }
                  break;
          }
+
+}
+    public static void main(String args[]) {
+        
+      int uf[]=new int[10];
+         
+  
+        canspost(uf,1) ;
+        
+         
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
